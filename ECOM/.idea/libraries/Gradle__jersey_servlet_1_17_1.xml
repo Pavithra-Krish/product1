@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jersey-servlet-1.17.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jersey-servlet-1.17.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

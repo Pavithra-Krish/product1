@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.product.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://services.product.com" xmlns:intf="http://services.product.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://services.product.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="SelectProduct">
+    <complexType>
+     <sequence>
+      <element name="ProdID" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="SelectProductResponse">
+    <complexType>
+     <sequence>
+      <element name="SelectProductReturn" type="impl:ArrayOf_xsd_anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_xsd_anyType">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:anyType"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="SelectProductResponse">
+
+      <wsdl:part element="impl:SelectProductResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="SelectProductRequest">
+
+      <wsdl:part element="impl:SelectProduct" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="DbConnection">
+
+      <wsdl:operation name="SelectProduct">
+
+         <wsdl:input message="impl:SelectProductRequest" name="SelectProductRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:SelectProductResponse" name="SelectProductResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="DbConnectionSoapBinding" type="impl:DbConnection">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="SelectProduct">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="SelectProductRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="SelectProductResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="DbConnectionService">
+
+      <wsdl:port binding="impl:DbConnectionSoapBinding" name="DbConnection">
+
+         <wsdlsoap:address location="http://localhost:2020/Product/services/DbConnection"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

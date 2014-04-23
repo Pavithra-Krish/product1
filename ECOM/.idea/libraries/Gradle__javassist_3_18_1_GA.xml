@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: javassist-3.18.1-GA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/javassist-3.18.1-GA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

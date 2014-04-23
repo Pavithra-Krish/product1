@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: spring-web-3.1.4.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/spring-web-3.1.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

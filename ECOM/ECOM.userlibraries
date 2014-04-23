@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Gradle: spring-tx-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-tx-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: spring-2.5.6">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-2.5.6.jar" />
+  </library>
+  <library name="Gradle: slf4j-log4j12-1.7.5">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/slf4j-log4j12-1.7.5.jar" />
+  </library>
+  <library name="Gradle: spring-expression-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-expression-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: C__Users_Pavithra_IdeaProjects_ECOM_src_main_resources_javax_ws_rs_jar" />
+  <library name="Gradle: log4j-1.2.17">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/log4j-1.2.17.jar" />
+  </library>
+  <library name="Gradle: hamcrest-core-1.3">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/product-integration-services/src/main/resources/hamcrest-core-1.3.jar" />
+  </library>
+  <library name="Gradle: jersey-server-1.17.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-server-1.17.1.jar" />
+  </library>
+  <library name="Gradle: paranamer-2.6">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/paranamer-2.6.jar" />
+  </library>
+  <library name="Gradle: C__Users_Pavithra_IdeaProjects_ECOM_src_main_resources_commons_lang3_3_1_jar" />
+  <library name="Gradle: commons-codec-1.4">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/commons-codec-1.4.jar" />
+  </library>
+  <library name="Gradle: spring-asm-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-asm-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: spring-web-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-web-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: jersey-client-1.11">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-client-1.11.jar" />
+  </library>
+  <library name="Gradle: slf4j-api-1.7.5">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/slf4j-api-1.7.5.jar" />
+  </library>
+  <library name="Gradle: jaxb-impl-2.2.3-1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jaxb-impl-2.2.3-1.jar" />
+  </library>
+  <library name="Gradle: gson-2.2.4">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/gson-2.2.4.jar" />
+  </library>
+  <library name="Gradle: commons-logging-1.1.3">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/commons-logging-1.1.3.jar" />
+  </library>
+  <library name="Gradle: common-validation-services-1.1.6">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/product-integration-services/src/main/resources/common-validation-services-1.1.6.jar" />
+  </library>
+  <library name="Gradle: jackson-xc-1.9.2">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jackson-xc-1.9.2.jar" />
+  </library>
+  <library name="Gradle: spring-beans-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-beans-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: jettison-1.0.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jettison-1.0.1.jar" />
+  </library>
+  <library name="Gradle: asm-3.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/asm-3.1.jar" />
+  </library>
+  <library name="Gradle: cxf-bundle-jaxrs-2.7.10">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/cxf-bundle-jaxrs-2.7.10.jar" />
+  </library>
+  <library name="Gradle: jersey-core-1.17.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-core-1.17.1.jar" />
+  </library>
+  <library name="Gradle: jackson-mapper-asl-1.9.9">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jackson-mapper-asl-1.9.9.jar" />
+  </library>
+  <library name="Gradle: spring-core-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-core-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: commons-beanutils-1.8.0">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/commons-beanutils-1.8.0.jar" />
+  </library>
+  <library name="Gradle: javassist-3.18.1-GA">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/javassist-3.18.1-GA.jar" />
+  </library>
+  <library name="Gradle: jackson-jaxrs-1.9.2">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jackson-jaxrs-1.9.2.jar" />
+  </library>
+  <library name="Gradle: spring-context-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-context-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: jersey-servlet-1.17.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-servlet-1.17.1.jar" />
+  </library>
+  <library name="Gradle: jaxrs-api-3.0-beta-2">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jaxrs-api-3.0-beta-2.jar" />
+  </library>
+  <library name="jars">
+    <archive path="C:/JAR/1.0/jersey-servlet-1.17.1.jar" />
+    <archive path="C:/JAR/1.0/mockito-all-1.9.0.jar" />
+    <archive path="C:/JAR/1.0/spring-web-3.1.4.RELEASE.jar" />
+    <archive path="C:/JAR/1.0/orika-core-1.4.0.jar" />
+    <archive path="C:/JAR/1.0/slf4j-api-1.7.5.jar" />
+    <archive path="C:/JAR/1.0/jersey-spring-1.11.jar" />
+    <archive path="C:/JAR/1.0/jsr311-api-1.1.1.jar" />
+    <archive path="C:/JAR/1.0/junit-4.10.jar" />
+    <archive path="C:/JAR/1.0/jersey-server-1.17.1.jar" />
+    <archive path="C:/JAR/1.0/javax.inject-1.jar" />
+    <archive path="C:/JAR/1.0/jersey-core-1.17.1.jar" />
+    <archive path="C:/JAR/1.0/hamcrest-core-1.3.jar" />
+    <archive path="C:/JAR/1.0/asm-3.1.jar" />
+    <archive path="C:/JAR/1.0/common-validation-services-1.1.6.jar" />
+    <archive path="C:/JAR/1.0/jackson-core-asl-1.9.9.jar" />
+    <archive path="C:/JAR/1.0/commons.collections-3.2.1/commons-collections-3.2.1.jar" />
+    <archive path="C:/JAR/1.0/jackson-jaxrs-1.9.2.jar" />
+  </library>
+  <library name="Gradle: mockito-all-1.9.0">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/product-integration-services/src/main/resources/mockito-all-1.9.0.jar" />
+  </library>
+  <library name="Gradle: jsr311-api-1.1.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jsr311-api-1.1.1.jar" />
+  </library>
+  <library name="Gradle: jersey-spring-1.11">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-spring-1.11.jar" />
+  </library>
+  <library name="Gradle: jaxb-api-2.2.7">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jaxb-api-2.2.7.jar" />
+  </library>
+  <library name="Gradle: orika-core-1.4.0">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/orika-core-1.4.0.jar" />
+  </library>
+  <library name="Gradle: jersey-json-1.17.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/jersey-json-1.17.1.jar" />
+  </library>
+  <library name="Gradle: javax.ws.rs-api-2.0">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/javax.ws.rs-api-2.0.jar" />
+  </library>
+  <library name="Gradle: C__Users_Pavithra_IdeaProjects_ECOM_src_main_resources_commons_httpclient_3_1_jar" />
+  <library name="Gradle: javax.inject-1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/javax.inject-1.jar" />
+  </library>
+  <library name="Gradle: commons-collections-3.2.1">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/commons-collections-3.2.1.jar" />
+  </library>
+  <library name="Gradle: jackson-core-asl-1.9.9">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/product-integration-models/src/main/resources/jackson-core-asl-1.9.9.jar" />
+  </library>
+  <library name="Gradle: spring-aop-3.1.4.RELEASE">
+    <archive path="C:/Users/Pavithra/IdeaProjects/ECOM/src/main/resources/spring-aop-3.1.4.RELEASE.jar" />
+  </library>
+  <library name="jackson-mapper-asl-1.9.9">
+    <archive path="C:/JAR/1.0/jackson-mapper-asl-1.9.9.jar" />
+  </library>
+</eclipse-userlibraries>
+

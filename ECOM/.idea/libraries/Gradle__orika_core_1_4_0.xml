@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: orika-core-1.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/orika-core-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

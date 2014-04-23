@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <!--<import resource="file:C:/Users\Pavithra\IdeaProjects\ECOM\product-domain-services\src\main\resources\services.product.domain.services_c1.xml"/>-->
+    <import resource="classpath:services.product.domain.services_c1.xml"/>
+    <import resource="classpath:services.product.integration.transformers_c1.xml"/>
+
+
+
+    <context:component-scan base-package="com.services.product.integration.services_c1"/>
+
+    <bean id="productResource"
+          class="com.services.product.integration.services_c1.ProductResource" autowire="constructor"/>
+      <!--  <constructor-arg ref="productDomainService"/>
+        <constructor-arg ref="productBulkDomainService"/>
+        <constructor-arg ref="productIntegrationResponseMapper"/>-->
+   <!-- </bean>-->
+
+    <bean id="productIntegrationResponseMapper"
+          class="com.services.product.integration.services_c1.mapper.ProductIntegrationResponseMapper"
+            >
+        <constructor-arg ref="restProductMapper"/>
+        <constructor-arg ref="restBulkProductRequestMapper"/>
+        <constructor-arg ref="restBulkProductMapper"/>
+    </bean>
+
+</beans>
+
+

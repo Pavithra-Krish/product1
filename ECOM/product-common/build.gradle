@@ -1,0 +1,17 @@
+
+apply plugin :'java'
+apply plugin :'maven'
+
+dependencies{
+  /*  compile([
+
+    library.jar2
+            ])*/
+    //runtime files('libs/a.jar', 'libs/b.jar')
+ //   runtime fileTree(dir: 'libs', include: '*.jar')
+
+  /*  files('./src/main/resources/jackson-mapper-asl-1.9.9.jar')
+   files('./src/main/resources/jersey-core-1.17.1.jar')
+
+    compile fileTree(dir: 'resources', include: 'jackson-mapper-asl-1.9.9.jar')*/
+}

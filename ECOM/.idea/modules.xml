@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ECOM.iml" filepath="$PROJECT_DIR$/ECOM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-common/product-common.iml" filepath="$PROJECT_DIR$/product-common/product-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-data-access/product-data-access.iml" filepath="$PROJECT_DIR$/product-data-access/product-data-access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-domain-models/product-domain-models.iml" filepath="$PROJECT_DIR$/product-domain-models/product-domain-models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-domain-services/product-domain-services.iml" filepath="$PROJECT_DIR$/product-domain-services/product-domain-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-integration-models/product-integration-models.iml" filepath="$PROJECT_DIR$/product-integration-models/product-integration-models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-integration-services/product-integration-services.iml" filepath="$PROJECT_DIR$/product-integration-services/product-integration-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-integration-transformers/product-integration-transformers.iml" filepath="$PROJECT_DIR$/product-integration-transformers/product-integration-transformers.iml" />
+    </modules>
+  </component>
+</project>
+

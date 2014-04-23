@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jersey-spring-1.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jersey-spring-1.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

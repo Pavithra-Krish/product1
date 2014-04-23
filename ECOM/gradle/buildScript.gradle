@@ -1,0 +1,17 @@
+/*
+repositories {
+    //maven { url "https://github.com/ben-manes/gradle-versions-plugin/raw/mvnrepo" }
+    maven { url "https://github.com/ben-manes/gradle-versions-plugin/raw/mvnrepo" }
+    mavenCentral()
+    mavenLocal()
+   // compile()
+}
+dependencies {
+    classpath "org.apache.maven:maven-artifact:2.2.1"
+
+ //   classpath 'com.github.ben-manes:gradle-versions-plugin:0.3'
+    classpath 'com.github.ben-manes:gradle-versions-plugin:0.5-beta-1'
+  //  compile group: 'commons-codec', name: 'commons-codec', version: '1.2'
+  //  classpath 'org.gradle.api.tasks.compile'
+
+}*/

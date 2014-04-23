@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jackson-xc-1.9.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/jackson-xc-1.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

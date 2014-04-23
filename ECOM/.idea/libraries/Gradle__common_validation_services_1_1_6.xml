@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: common-validation-services-1.1.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/product-integration-services/src/main/resources/common-validation-services-1.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

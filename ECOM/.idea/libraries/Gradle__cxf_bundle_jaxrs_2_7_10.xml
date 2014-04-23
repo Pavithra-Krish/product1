@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: cxf-bundle-jaxrs-2.7.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/cxf-bundle-jaxrs-2.7.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,195 @@
+/*buildscript { apply from: file("$rootDir/gradle/buildScript.gradle"), to: buildscript }*/
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+allprojects {
+   /* apply from: "$rootDir/gradle/repositories.gradle"
+    apply from: "$rootDir/gradle/dependencies.gradle"*/
+ //   apply plugin: 'versions'
+ //   apply plugin: "idea"
+
+    repositories {
+     /*   maven { url repos.library }*/
+        mavenCentral()
+        mavenLocal()
+    }
+
+
+
+   dependencies{
+      /* files('./src/main/resources/jackson-mapper-asl-1.9.2.jar')
+       files('./src/main/resources/hamcrest-core-1.3.jar')
+       files('./src/main/resources/jackson-core-asl-1.9.2.jar')
+       files('./src/main/resources/jersey-server-1.17.1.jar')
+       files('./src/main/resources/jersey-servlet-1.17.1.jar')
+       files('./src/main/resources/jersey-spring-1.11.jar')
+       files('./src/main/resources/jsr311-api-1.1.1.jar')
+       files('./src/main/resources/mockito-all-1.9.0.jar')
+       files('./src/main/resources/orika-core-1.4.0.jar')
+       files('./src/main/resources/slf4j-api-1.7.5.jar')
+       files('./src/main/resources/spring-web-3.1.4.RELEASE.jar')
+       files('./src/main/resources/asm-3.1.jar')
+       files('./src/main/resources/jersey-core-1.17.1.jar')*/
+
+
+
+   }
+}
+
+subprojects {
+
+    task preCommitBuild(description: "The minimum to be run before check-in", group: "workflow") {dependsOn "check", "build", "test", "testJob" }
+    task preCommitBuildExtended(description: "The minimum to be run before check-in plus more", group: "workflow") {dependsOn "check", "build", "test", "testJob" }
+    task continuousBuild(description: "A quick build to support continuous integration", group: "workflow") { dependsOn "check", "test", "testJob","build" }
+    task continuousBuildExtended(description: "A build to continue with longer running tasks", group: "workflow") {  }
+    task snapshotBuild(description: "The minimum to be run to generate a snapshot", group: "workflow") { dependsOn "check", "build", "test", "testJob", "uploadArchives" }
+    task releaseBuild(description: "The minimum to be run to generate a release", group: "workflow") { dependsOn "check", "build", "test", "testJob", "uploadArchives" }
+
+    apply plugin: 'java'
+    apply plugin : 'maven'
+}
+
+/*
+task createWrapper(type: Wrapper) {
+    gradleVersion = "1.11"
+    distributionUrl = "C:/Users/Pavithra/Downloads/gradle-1.11-all.zip"
+}
+*/
+
+def setVCSMapping(project, vcs, directory) {
+    def vcsDirectoryMappings = findComponent(project, 'VcsDirectoryMappings')
+    vcsDirectoryMappings.mapping.@vcs = vcs
+    vcsDirectoryMappings.mapping.@directory = directory
+}
+
+def addTypeAwareHighlighting(project, isEnabled) {
+    def highlightingAdvisor = appendComponent(project, 'HighlightingAdvisor')
+    appendOption(highlightingAdvisor, 'SUGGEST_TYPE_AWARE_HIGHLIGHTING', 'false')
+    appendOption(highlightingAdvisor, 'TYPE_AWARE_HIGHLIGHTING_ENABLED', isEnabled)
+}
+
+def addGradleSettings(project, useLocalInstall, gradleHome, linkedPath) {
+    def gradleSettings = appendComponent(project, 'GradleSettings')
+    appendOption(gradleSettings, 'preferLocalInstallationToWrapper', useLocalInstall)
+    appendOption(gradleSettings, 'gradleHome', gradleHome)
+    appendOption(gradleSettings, 'linkedProjectPath', linkedPath)
+}
+
+def findComponent(node, name) {
+    node.component.find { it.@name == name }
+}
+
+def appendComponent(node, name) {
+    node.appendNode('component', [name: name])
+}
+
+def appendOption(node, name, value) {
+    node.appendNode 'option', [name: name, value: value]
+}
+
+def changeOption(node, name, value) {
+    node.option.find { it.@name == name }.@value = value
+}
+
+
+
+dependencies {
+   // compile project(":product-integration-services")
+/*
+
+    compile files('./src/main/resources/spring-web-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/jackson-jaxrs-1.9.2.jar')
+    // compile files('./src/main/resources/saaj-api-1.3.4-sources.jar')
+    compile files('./src/main/resources/spring-aop-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-asm-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-beans-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-context-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-web-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-core-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-expression-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/commons-beanutils-1.8.0.jar')
+    compile files('./src/main/resources/commons-codec-1.4.jar')
+    compile files('./src/main/resources/gson-2.2.4.jar')
+    compile files('./src/main/resources/cxf-bundle-jaxrs-2.7.10.jar')
+    compile files('./src/main/resources/commons-logging-1.1.3.jar')
+    compile files('./src/main/resources/jackson-xc-1.9.2.jar')
+    compile files('./src/main/resources/javassist-3.18.1-GA.jar')
+    compile files('./src/main/resources/javax.inject-2.2.0.jar')
+    compile files('./src/main/resources/javax.ws.rs-api-2.0.jar')
+    compile files('./src/main/resources/jaxb-api-2.2.7.jar')
+    compile files('./src/main/resources/jaxb-impl-2.2.3-1.jar')
+    compile files('./src/main/resources/jaxrs-api-3.0-beta-2.jar')
+    compile files('./src/main/resources/jersey-client-1.11.jar')
+    compile files('./src/main/resources/jersey-common.jar')
+    compile files('./src/main/resources/jersey-guava-2.6.jar')
+    compile files('./src/main/resources/jersey-json-1.17.1.jar')
+    compile files('./src/main/resources/jettison-1.0.1.jar')
+    compile files('./src/main/resources/log4j-1.2.17.jar')
+    compile files('./src/main/resources/paranamer-2.6.jar')
+    compile files('./src/main/resources/slf4j-api-1.7.5.jar')
+    compile files('./src/main/resources/slf4j-log4j12-1.7.5.jar')
+    compile files('./src/main/resources/javassist-3.18.1-GA.jar')
+    compile files('./src/main/resources/javassist-3.18.1-GA.jar')
+*/
+
+
+
+    compile files('./src/main/resources/jackson-core-asl-1.9.9.jar')
+    compile files('./src/main/resources/jackson-jaxrs-1.9.2.jar')
+    compile files('./src/main/resources/jackson-mapper-asl-1.9.9.jar')
+    compile files('./src/main/resources/jackson-xc-1.9.2.jar')
+    compile files('./src/main/resources/commons-lang3-3.1.jar')
+    compile files('./src/main/resources/jettison-1.0.1.jar')
+    compile files('./src/main/resources/commons-httpclient-3.1.jar')
+    compile files('./src/main/resources/commons-beanutils-1.8.0.jar')
+    compile files('./src/main/resources/javax.inject-1.jar')
+    compile files('./src/main/resources/javax.ws.rs.jar')
+    compile files('./src/main/resources/orika-core-1.4.0.jar')
+    compile files('./src/main/resources/commons-collections-3.2.1.jar')
+    compile files('./src/main/resources/spring-2.5.6.jar')
+    compile files('./src/main/resources/spring-beans-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-aop-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-asm-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-beans-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-tx-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-web-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/jersey-client-1.11.jar')
+    compile files('./src/main/resources/jersey-server-1.17.1.jar')
+    compile files('./src/main/resources/jersey-json-1.17.1.jar')
+    compile files('./src/main/resources/jersey-core-1.17.1.jar')
+    compile files('./src/main/resources/jersey-servlet-1.17.1.jar')
+    compile files('./src/main/resources/jersey-spring-1.11.jar')
+    compile files('./src/main/resources/commons-logging-1.1.3.jar')
+    compile files('./src/main/resources/paranamer-2.6.jar')
+    compile files('./src/main/resources/javassist-3.18.1-GA.jar')
+    compile files('./src/main/resources/log4j-1.2.17.jar')
+    compile files('./src/main/resources/cxf-bundle-jaxrs-2.7.10.jar')
+    compile files('./src/main/resources/slf4j-api-1.7.5.jar')
+    compile files('./src/main/resources/slf4j-log4j12-1.7.5.jar')
+    compile files('./src/main/resources/asm-3.1.jar')
+    compile files('./src/main/resources/jaxb-api-2.2.7.jar')
+    compile files('./src/main/resources/jaxb-impl-2.2.3-1.jar')
+    compile files('./src/main/resources/gson-2.2.4.jar')
+    compile files('./src/main/resources/javax.ws.rs-api-2.0.jar')
+    compile files('./src/main/resources/jsr311-api-1.1.1.jar')
+    compile files('./src/main/resources/jaxrs-api-3.0-beta-2.jar')
+    compile files('./src/main/resources/commons-codec-1.4.jar')
+    compile files('./src/main/resources/spring-context-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-core-3.1.4.RELEASE.jar')
+    compile files('./src/main/resources/spring-expression-3.1.4.RELEASE.jar')
+
+   /* compile files('./src/main/resources/spring-expression-3.1.4.RELEASE.jar')*/
+
+    compile project(":product-integration-services")
+    compile project(":product-integration-models")
+    compile project(":product-integration-transformers")
+    compile project(":product-domain-services")
+    compile project(":product-domain-models")
+    compile project(":product-common")
+
+
+}

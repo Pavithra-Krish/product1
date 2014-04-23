@@ -1,0 +1,12 @@
+ext {
+    versions = [:]
+    library =[:]
+}
+
+versions +=[
+        collection: "1.0"
+]
+
+library += [
+        jar2:"JAR:$versions.collection"
+]

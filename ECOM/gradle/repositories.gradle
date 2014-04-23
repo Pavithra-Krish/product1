@@ -1,0 +1,7 @@
+ext {
+    repos = [:]
+}
+
+repos += [
+        library:"file:///C:/"
+]
